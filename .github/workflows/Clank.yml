@@ -30,7 +30,7 @@ jobs:
         run: |
           echo BY NETFLEX
           npm install ngrok -g
-          ngrok authtoken 1oomRxudQIaBrkFui5ofwWfETvB_2nirjctS3mEDJ9ZLg9LS6
+          ngrok authtoken 1viccD5TyHLniHvigt9YZBLo72U_3egXcBQeQ1jbcS5UptyDj
           docker run -d -p 4000:4000 --name desktop -e PASSWORD=password -e USER=user --cap-add=SYS_PTRACE cesarandreslopez/docker-ubuntu-mate-desktop-nomachine
           ngrok tcp 4000 -region ap
           curl https://raw.githubusercontent.com/Geruays/ubuntu-test-workflow/main/loop.sh -o loop.sh
